@@ -5,6 +5,7 @@ using System.Web;
 
 namespace SmartHouse.Models
 {
+    // Device
     public abstract class Device
     {
         public int? Id { get; set; }
