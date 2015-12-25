@@ -165,7 +165,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Channels.cs" />
+    <Compile Include="Models\DevicePropStates\Channels.cs" />
     <Compile Include="Models\Cooker.cs" />
     <Compile Include="Models\Device.cs" />
     <Compile Include="Models\DeviceConsole.cs" />
@@ -175,7 +175,7 @@
     <Compile Include="Models\DeviceSettings\MicrowaveSettings.cs" />
     <Compile Include="Models\DeviceSettings\TvSettings.cs" />
     <Compile Include="Models\Fridge.cs" />
-    <Compile Include="Models\GrillState.cs" />
+    <Compile Include="Models\DevicePropStates\GrillState.cs" />
     <Compile Include="Models\Interfaces\IDrawe.cs" />
     <Compile Include="Models\Interfaces\ISettings.cs" />
     <Compile Include="Models\Lamp.cs" />
@@ -401,7 +401,7 @@
     <Content Include="Content\Sass\.sass-cache\f14b7b9f9d5f92df533304fb01472d8e020f4360\_resolution.scssc" />
     <Content Include="Content\Sass\.sass-cache\f20dab5b7fb1216f35d8484ebb92bc8dca57139a\_utilities.scssc" />
     <Content Include="Content\Sass\.sass-cache\ff877fff6f843eb0a825a9ec9036dd3df8815093\_default.scssc" />
-    <Content Include="Content\Sass\config.rb" />
+    <Content Include="Content\Sass\1_config.rb" />
     <Content Include="Content\Sass\sass\base\_base.scss" />
     <Content Include="Content\Sass\sass\base\_index.scss" />
     <Content Include="Content\Sass\sass\base\_reset.scss" />

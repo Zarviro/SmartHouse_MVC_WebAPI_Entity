@@ -145,8 +145,8 @@
             GetCurrentTv();
             var setting = $("#device-prop option:selected").text();
             $.ajax({
-                url: "/api/ApiConsole/Tv/IncrValue/" + setting,
-                type: "POST",
+                url: "/api/ApiConsole/Tv/PutIncrValue/" + setting,
+                type: "PUT",
                 data: JSON.stringify(tv),
                 contentType: "application/json;charset=utf-8",
                 success: function (data) {
@@ -162,8 +162,8 @@
             GetCurrentTv();
             var setting = $("#device-prop option:selected").text();
             $.ajax({
-                url: "/api/ApiConsole/Tv/DecrValue/" + setting,
-                type: "POST",
+                url: "/api/ApiConsole/Tv/PutDecrValue/" + setting,
+                type: "PUT",
                 data: JSON.stringify(tv),
                 contentType: "application/json;charset=utf-8",
                 success: function (data) {
@@ -178,8 +178,8 @@
             event.preventDefault();
             GetCurrentTv();
             $.ajax({
-                url: "/api/ApiConsole/Tv/IsOn/true",
-                type: "POST",
+                url: "/api/ApiConsole/Tv/PutIsOn/true",
+                type: "PUT",
                 data: JSON.stringify(tv),
                 contentType: "application/json;charset=utf-8",
                 success: function (data) {
@@ -200,8 +200,8 @@
             event.preventDefault();
             GetCurrentTv();
             $.ajax({
-                url: "/api/ApiConsole/Tv/IsOn/false",
-                type: "POST",
+                url: "/api/ApiConsole/Tv/PutIsOn/false",
+                type: "PUT",
                 data: JSON.stringify(tv),
                 contentType: "application/json;charset=utf-8",
                 success: function (data) {
@@ -272,7 +272,7 @@
         function ShowTv() {
             GetCurrentTv();
             $.ajax({
-                url: "/WebApiView/PartialTv",
+                url: "/WebApiView/PartialTv/",
                 type: "POST",
                 data: JSON.stringify(tv),
                 contentType: "application/json;charset=utf-8",

@@ -1,4 +1,5 @@
 ﻿using SmartHouse.Models;
+using SmartHouse.Models.DevicePropStates;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;

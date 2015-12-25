@@ -1,4 +1,5 @@
-﻿using SmartHouse.Models.DeviceSettings;
+﻿using SmartHouse.Models.DevicePropStates;
+using SmartHouse.Models.DeviceSettings;
 using SmartHouse.Models.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -11,7 +12,7 @@ namespace SmartHouse.Models
     {
          #region Private Data
 
-        private readonly byte maxVolume;
+        private readonly byte maxVolume = 10;
         private int _volume;
 
         #endregion
@@ -22,9 +23,11 @@ namespace SmartHouse.Models
 
         #region Constructors
 
-        public Tv()
+        public Tv() {}
+
+        public Tv(byte maxVolume)
         {
-            maxVolume = 10;
+            this.maxVolume = maxVolume;
         }
 
         #endregion

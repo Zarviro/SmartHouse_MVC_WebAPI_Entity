@@ -11,7 +11,7 @@ namespace SmartHouse.Models
     {
         #region Private Data
 
-        private readonly byte maxBright;
+        private readonly byte maxBright = 100;
         private byte _bright;
 
         #endregion
@@ -22,9 +22,11 @@ namespace SmartHouse.Models
 
         #region Constructors
 
-        public Lamp()
+        public Lamp() {}
+
+        public Lamp(byte maxBright)
         {
-            maxBright = 100;
+            this.maxBright = maxBright;
         }
 
         #endregion

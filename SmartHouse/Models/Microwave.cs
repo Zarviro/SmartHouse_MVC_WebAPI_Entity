@@ -1,4 +1,5 @@
-﻿using SmartHouse.Models.DeviceSettings;
+﻿using SmartHouse.Models.DevicePropStates;
+using SmartHouse.Models.DeviceSettings;
 using SmartHouse.Models.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -11,7 +12,7 @@ namespace SmartHouse.Models
     {
         #region Private Data
 
-        private readonly int maxPower;
+        private readonly int maxPower = 750;
         private int _power;
 
         #endregion
@@ -22,9 +23,11 @@ namespace SmartHouse.Models
 
         #region Constructors
 
-        public Microwave()
+        public Microwave() {}
+
+        public Microwave(int maxPower)
         {
-            maxPower = 750;
+            this.maxPower = maxPower;
         }
 
         #endregion

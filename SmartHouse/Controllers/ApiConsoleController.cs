@@ -30,8 +30,8 @@ namespace SmartHouse.Controllers
             return str;
         }
 
-        [Route("api/ApiConsole/Tv/IsOn/{isOn}")]
-        public Tv PostIsOn(bool isOn, Tv tv)
+        [Route("api/ApiConsole/Tv/PutIsOn/{isOn}")]
+        public Tv PutIsOn(bool isOn, Tv tv)
         {
             if(isOn)
             {
@@ -44,15 +44,15 @@ namespace SmartHouse.Controllers
             return tv;
         }
 
-        [Route("api/ApiConsole/Tv/IncrValue/{setting}")]
-        public Tv PostIncrValue(string setting, Tv tv)
+        [Route("api/ApiConsole/Tv/PutIncrValue/{setting}")]
+        public Tv PutIncrValue(string setting, Tv tv)
         {
             (tv as ISettings).IncrValue(setting);
             return tv;
         }
 
-        [Route("api/ApiConsole/Tv/DecrValue/{setting}")]
-        public Tv PostDecrValue(string setting, Tv tv)
+        [Route("api/ApiConsole/Tv/PutDecrValue/{setting}")]
+        public Tv PutDecrValue(string setting, Tv tv)
         {
             (tv as ISettings).DecrValue(setting);
             return tv;

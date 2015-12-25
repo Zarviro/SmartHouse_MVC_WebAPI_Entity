@@ -11,8 +11,8 @@ namespace SmartHouse.Models
     {
         #region Private Data
 
-        private readonly int minTemp1;
-        private readonly int maxTemp2;
+        private readonly int minTemp1 = -20;
+        private readonly int maxTemp2 = 15;
         private int _temp1;
         private int _temp2;
 
@@ -24,10 +24,12 @@ namespace SmartHouse.Models
 
         #region Constructors
 
-        public Fridge()
+        public Fridge() {}
+
+        public Fridge(int minTemp1, int maxTemp2)
         {
-            minTemp1 = -20;
-            maxTemp2 = 15;
+            this.minTemp1 = minTemp1;
+            this.maxTemp2 = maxTemp2;
         }
 
         #endregion

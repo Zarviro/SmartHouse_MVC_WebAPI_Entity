@@ -7,7 +7,7 @@ namespace SmartHouse.Models
 {
     public abstract class Device
     {
-        public int? Id { get; set; }
+        public int Id { get; set; }
         public bool IsOn { get; set; }
 
         public abstract string TypeDevice();

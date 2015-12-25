@@ -11,10 +11,10 @@ namespace SmartHouse.Models
     {
         #region Private Data
 
-        private readonly int maxTemp1;
-        private readonly int maxTemp2;
-        private readonly int maxTemp3;
-        private readonly int maxTemp4;
+        private readonly int maxTemp1 = 400;
+        private readonly int maxTemp2 = 200;
+        private readonly int maxTemp3 = 200;
+        private readonly int maxTemp4 = 100;
         private int _temp1;
         private int _temp2;
         private int _temp3;
@@ -28,12 +28,14 @@ namespace SmartHouse.Models
 
         #region Constructors
 
-        public Cooker()
+        public Cooker() {}
+
+        public Cooker(int maxTemp1, int maxTemp2, int maxTemp3, int maxTemp4)
         {
-            maxTemp1 = 400;
-            maxTemp2 = 200;
-            maxTemp3 = 200;
-            maxTemp4 = 100;
+            this.maxTemp1 = maxTemp1;
+            this.maxTemp2 = maxTemp2;
+            this.maxTemp3 = maxTemp3;
+            this.maxTemp4 = maxTemp4;
         }
 
         #endregion

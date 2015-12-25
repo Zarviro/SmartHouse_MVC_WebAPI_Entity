@@ -18,8 +18,8 @@ namespace SmartHouse.Controllers
         public ActionResult Index()
         {
             List<IDrawe> devices = new List<IDrawe>();
-            devices.AddRange(db.Fridges);
             devices.AddRange(db.Tvs);
+            devices.AddRange(db.Fridges);
             devices.AddRange(db.Lamps);
             devices.AddRange(db.Cookers);
             devices.AddRange(db.Microwaves);
