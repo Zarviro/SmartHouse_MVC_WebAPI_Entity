@@ -23,7 +23,6 @@ namespace SmartHouse.Controllers
             return settings;
         }
 
-
         [Route("api/ApiConsole/Tv/GetValue/{setting}")]
         public string PostGetValue(string setting, Tv tv)
         {
