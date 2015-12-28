@@ -17,7 +17,7 @@ namespace SmartHouse.Models
         private int _temp2;
 
         #endregion
-
+          
 
 
 
